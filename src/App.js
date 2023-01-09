@@ -8,16 +8,21 @@ import {Ecommerce, Customers, Orders, Kanban, Calendar, Stacked,
   ColorPicker, ColorMapping, Editor, Pyramid, Area, Bar, Pie, Financial, Employees, Line
 } from './pages'
 
-const App = () => {
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FiSettings } from "react-icons/fi";
+import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+import "./App.css";
 
-  const activeMenu = true;
+
+const App = () => {
+const activeMenu = true;
   return (
     <BrowserRouter>
-      <div className="flex relative dark:bg-main-dark-bg">
-        <div className="fixed right-4 bottom-4" style={{ zIndex: 100 }}>
-
+      <div className="flex relative  dark:bg-main-dark-bg">
+        <div className="fixed right-4 bottom-4" style={{ zIndex: "1000" }}>
           <TooltipComponent content="Settings" position="Top">
-            <button type='button' className='text-4xl p-3 text-white' style={{ background: 'blue', borderRadius: '50%' }}>
+            <button type="button" className="text-4xl p-3 hover:drop-shadow-xl text-white" style={{background: "blue", borderRadius: "50%" }}>
               <FiSettings />
             </button>
           </TooltipComponent>
@@ -73,7 +78,7 @@ const App = () => {
 
       </div>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
