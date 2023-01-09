@@ -1,17 +1,11 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
-import './App.css'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import {Navbar, ThemeSettings, Footer, Sidebar} from './components'
 import {Ecommerce, Customers, Orders, Kanban, Calendar, Stacked, 
   ColorPicker, ColorMapping, Editor, Pyramid, Area, Bar, Pie, Financial, Employees, Line
 } from './pages'
-
-import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { FiSettings } from "react-icons/fi";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import "./App.css";
 
 
