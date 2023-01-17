@@ -7,10 +7,11 @@ import {Ecommerce, Customers, Orders, Kanban, Calendar, Stacked,
   ColorPicker, ColorMapping, Editor, Pyramid, Area, Bar, Pie, Financial, Employees, Line
 } from './pages'
 import "./App.css";
-
+import { useStateContext } from './contexts/ContextProvider'
 
 const App = () => {
-const activeMenu = true;
+const {activeMenu} = useStateContext();
+
   return (
     <BrowserRouter>
       <div className="flex relative  dark:bg-main-dark-bg">
